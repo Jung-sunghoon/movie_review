@@ -1,3 +1,17 @@
 #sidebar {
   height: 100vh;
+  border-right: 1px solid #ededed;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sidebarIcon {
+  color: blue;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.sidebarIcon:hover {
+  background-color: blue;
+  color: white;
 }

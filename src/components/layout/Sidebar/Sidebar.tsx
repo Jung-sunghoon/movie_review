@@ -1,18 +1,27 @@
 import { Link } from 'react-router-dom'
 import styles from './sidebar.module.css'
+import HomeIcon from '@mui/icons-material/Home'
+import SearchIcon from '@mui/icons-material/Search'
+import PersonIcon from '@mui/icons-material/Person'
 
 const Sidebar = () => {
   return (
     <div id={styles.sidebar}>
       <div>
         <div>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <HomeIcon className={styles.sidebarIcon} sx={{ fontSize: 50 }} />
+          </Link>
         </div>
         <div>
-          <Link to="/Login">Login</Link>
+          <Link to="/search">
+            <SearchIcon className={styles.sidebarIcon} sx={{ fontSize: 50 }} />
+          </Link>
         </div>
         <div>
-          <Link to="/Search">Search</Link>
+          <Link to="/mypage">
+            <PersonIcon className={styles.sidebarIcon} sx={{ fontSize: 50 }} />
+          </Link>
         </div>
       </div>
     </div>

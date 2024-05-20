@@ -5,12 +5,18 @@ import Sidebar from './Sidebar/Sidebar'
 const Layout = ({ children }: any) => {
   return (
     <div>
-      <Header />
       <div style={{ display: 'flex' }}>
         <Sidebar />
-        <main style={{ marginBottom: '0' }}>{children}</main>
+        <div
+          style={{
+            margin: '20px 20px 0 20px',
+            width: '100%',
+          }}
+        >
+          <Header />
+          <main style={{ marginBottom: '0', height: '100vh' }}>{children}</main>
+        </div>
       </div>
-
       <Footer />
     </div>
   )

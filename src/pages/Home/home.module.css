@@ -1,0 +1,16 @@
+.homeMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  gap: 20px;
+}
+
+#activity {
+  grid-column: span 2;
+}
+
+.homeGridItem {
+  padding: 10px;
+  border: 1px solid;
+  height: 300px;
+}
