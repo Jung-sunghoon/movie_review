@@ -8,17 +8,17 @@ const Sidebar = () => {
   return (
     <div id={styles.sidebar}>
       <div>
-        <div>
+        <div className={styles.sidebarIconWrapper}>
           <Link to="/">
             <HomeIcon className={styles.sidebarIcon} sx={{ fontSize: 50 }} />
           </Link>
         </div>
-        <div>
+        <div className={styles.sidebarIconWrapper}>
           <Link to="/search">
             <SearchIcon className={styles.sidebarIcon} sx={{ fontSize: 50 }} />
           </Link>
         </div>
-        <div>
+        <div className={styles.sidebarIconWrapper}>
           <Link to="/mypage">
             <PersonIcon className={styles.sidebarIcon} sx={{ fontSize: 50 }} />
           </Link>
